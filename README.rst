@@ -8,8 +8,7 @@ RQ-Cron
 Requirements
 ============
 
-* `RQ`_
-
+* `RQ <https://github.com/nvie/rq>`_
 
 =====
 Usage
@@ -20,6 +19,8 @@ Usage
 ==============
 Example config
 ==============
+
+Example::
 
 	{
 	   "jobs" : [
