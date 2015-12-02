@@ -2,7 +2,7 @@
 RQ-Cron
 =======
 
-`RQ Cron <https://bitbucket.org/gugu/rq-cron>`_ is a cron-like daemon, which can schedule tasks
+`RQ Cron <https://bitbucket.org/Healthjoy/rq-cron>`_ is a cron-like daemon, which can schedule tasks
 
 ============
 Requirements
