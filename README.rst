@@ -9,6 +9,7 @@ Requirements
 ============
 
 * `RQ <https://github.com/nvie/rq>`_
+* `croniter <https://github.com/taichino/croniter>`_
 
 ============
 Installation
