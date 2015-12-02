@@ -10,11 +10,26 @@ Requirements
 
 * `RQ <https://github.com/nvie/rq>`_
 
+============
+Installation
+============
+
+    pip install RQ-Cron
+
 =====
 Usage
 =====
 
     rq-cron --config /etc/rq_cron.json
+    
+========
+Benefits
+========
+
+1. Simple - uses python internal sched.py
+2. Stateless - don't store state
+3. Allows intervals < 60 seconds
+4. Saves task execution time in files for monitoring
 
 ==============
 Example config
