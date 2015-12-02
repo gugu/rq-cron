@@ -25,7 +25,7 @@ def _task(config, job):
 
 
 def run_scheduler():
-    parser = argparse.ArgumentParser(description='Process some integers.')
+    parser = argparse.ArgumentParser(description='RQ cron')
     parser.add_argument('--config', dest='config', action='store',
                         required=True, help='path to config file')
 
