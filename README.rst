@@ -14,7 +14,7 @@ Requirements
 Usage
 =====
 
-    rq-cron -c /etc/rq_cron.json
+    rq-cron --config /etc/rq_cron.json
 
 ==============
 Example config
