@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='RQ-Cron',
-      version='1.0',
+      version='1.0.1',
       description='RQ Cron',
       author='Andrii Kostenko',
       author_email='andrey@kostenko.name',
