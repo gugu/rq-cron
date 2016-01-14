@@ -21,7 +21,7 @@ logger.addHandler(logger_handler)
 
 def _task(config, job):
     q = rq.Queue(job.get("queue") or config["default_queue"])
-    return lambda *args: q.enqueue(job["name"], *args)
+    return lambda *args: q.enqueue(job["name"], *args, **job.get('kwargs'))
 
 
 def run_scheduler():

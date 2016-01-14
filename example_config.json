@@ -12,8 +12,11 @@
       },
       {
          "cron" : "32 */3 * * *",
-         "name" : "module3.task1"
-      },
+         "name" : "module3.task1",
+         "kwargs": {
+            "timeout": 30
+         }
+      }
    ],
    "status_dir" : "/tmp/rq_cron_status",
    "default_queue": "queue",
