@@ -31,7 +31,7 @@ def run_scheduler():
 
     args = parser.parse_args()
     config = json.load(open(vars(args)["config"]))
-    use_connection(Redis(config["redis"]))
+    use_connection(Redis(config["redis"], port=config.get('port', None)))
     try:
         os.mkdir(config["status_dir"])
     except OSError:
