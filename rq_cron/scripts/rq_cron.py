@@ -7,6 +7,7 @@ import argparse
 from redis import Redis
 
 import rq
+import redis
 from rq_cron import RQCron
 from rq.connections import use_connection
 
@@ -31,7 +32,10 @@ def run_scheduler():
 
     args = parser.parse_args()
     config = json.load(open(vars(args)["config"]))
-    use_connection(Redis(config["redis"]))
+    if config.get('redis_url'):
+        use_connection(redis.from_url(config['redis_url']))
+    else:
+        use_connection(Redis(config["redis"], port=config.get('port', None)))
     try:
         os.mkdir(config["status_dir"])
     except OSError:

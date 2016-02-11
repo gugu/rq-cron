@@ -60,6 +60,8 @@ Example::
 	   ],
 	   "status_dir" : "/tmp/rq_cron_status",
 	   "default_queue": "queue",
-	   "redis" : "localhost"
+	   "redis" : "localhost",
+	   "port": 6379
+
 	}
 
